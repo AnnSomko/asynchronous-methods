@@ -1,7 +1,4 @@
-import flatpickr from "flatpickr";
-import "flatpickr/dist/flatpickr.min.css";
-
-const startBtn = document.querySelector("button[data-start]");
+const startBtn = document.querySelector('button[data-start]');
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -29,7 +26,7 @@ const timer = {
   },
 };
 
-startBtn.addEventListener("click", () => {
+startBtn.addEventListener('click', () => {
   timer.start();
 });
 
