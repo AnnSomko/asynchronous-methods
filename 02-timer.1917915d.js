@@ -1,0 +1,2 @@
+const t=document.querySelector("button[data-start]"),e=(new Date,{intervalId:null,isActive:!1,start(){if(isActive)return;const t=Date.now();this.isActive=!0,this.intervalId=setInterval((()=>{const e=Date.now();console.log(e-t)}),1e3)}});function o(t){const e=6e4,o=36e5,n=24*o;return{days:Math.floor(t/n),hours:Math.floor(t%n/o),minutes:Math.floor(t%n%o/e),seconds:Math.floor(t%n%o%e/1e3)}}t.addEventListener("click",(()=>{e.start()})),console.log(o(2e3)),console.log(o(14e4)),console.log(o(2414e4));
+//# sourceMappingURL=02-timer.1917915d.js.map
