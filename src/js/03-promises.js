@@ -6,9 +6,10 @@ submitBtn.addEventListener('submit', onPositionAmount);
 function onPositionAmount(e) {
   e.preventDefault();
   const formElements = e.currentTarget.elements;
-  let delay = formElements.delay.value;
-  let step = formElements.step.value;
-  let amount = formElements.amount.value;
+  let delay = parseInt(formElements.delay.value);
+  let step = parseInt(formElements.step.value);
+  let amount = parseInt(formElements.amount.value);
+
   for (let position = 1; position <= amount; position++) {
     createPromise({ position, delay })
       .then(({ position, delay }) => {
