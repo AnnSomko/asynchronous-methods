@@ -1,4 +1,4 @@
-https://annsomko.github.io/goit-js-hw-09/
+https://annsomko.github.io/asynchronous-methods/
 
 There are 3 tasks:
 #1 - color switcher - switch color of background using setInterval method.
